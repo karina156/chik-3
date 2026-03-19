@@ -1,0 +1,119 @@
+body {
+  background-color: #0e0e0e;
+}
+.zagolovok {
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.playlists {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.obloshka {
+  width: 44.9vw;
+  border-radius: 2.7vw;
+}
+.obloshka.none,
+.obloshka-mini.none {
+  display: none;
+}
+
+.obloshka img {
+  width: 100%;
+}
+.obloshka-mini {
+  width: 6.3vw;
+}
+.obloshka-mini img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.playlist_8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.obloshka {
+  position: relative;
+  width: 44.8vw;
+  height: 47.2vw;
+  overflow: hidden;
+  background: linear-gradient(180deg, #6c58f2 0%, #d9ee53 100%);
+}
+.disk {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35vw;
+  height: 35vw;
+  z-index: 2;
+}
+.disk img {
+  width: 100%;
+}
+.btn-obloshka {
+  position: absolute;
+  top: 15.3vw;
+  left: 19.3vw;
+  width: 4.6vw;
+  height: 4.6vw;
+  z-index: 3;
+}
+.btn-obloshka img {
+  width: 100%;
+  height: 100%;
+}
+.rectangle-obloshka {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 11.6vw;
+  background: #000;
+  border-top: 0.066vw solid transparent;
+  border-image: linear-gradient(to right, white, transparent) 1;
+  z-index: 4;
+}
+
+.text-obloshka {
+  position: absolute;
+  left: 1.7vw;
+  right: 1.7vw;
+  bottom: 7.8vw;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-obloshka h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2vw;
+  font-weight: 100;
+  color: #d9ee61;
+}
+
+.text-obloshka img {
+  width: 2vw;
+  height: 2vw;
+}
+
+/* Текст описания */
+.obloshka p {
+  position: absolute;
+  left: 1.7vw;
+  right: 1.7vw;
+  bottom: 2.3vw;
+  z-index: 5;
+  font-family: Arial, sans-serif;
+  font-size: 1.323vw;
+  font-weight: 100;
+  color: #616161;
+}
