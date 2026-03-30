@@ -2,13 +2,255 @@ body {
   background-color: #0e0e0e;
 }
 .zagolovok {
-  font-size: 3vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw !important ;
+  font-family: "Montserrat";
+  color: #d9ee61;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  margin-left: 4vw;
 }
+
+/* секция 1 */
+.section_1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-blur {
+  position: absolute;
+  top: -50%;
+  width: 100vw;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.logotip {
+  position: relative;
+  display: block;
+  width: 92vw;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 7vw;
+  z-index: 1;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw 5vw;
+  box-sizing: border-box;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3vw;
+  padding: 1vw 4vw;
+  background: #000;
+  border: 0.069vw solid #3b3b3b;
+  font-family: "Montserrat";
+  font-size: 1.3vw;
+  font-weight: 400;
+  color: #d9ee61;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+}
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 0 8px rgba(255, 255, 255, 0.12),
+    0 0 14px rgba(217, 238, 97, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sints {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+#sint_1 {
+  position: relative;
+  width: 57vw;
+  height: 18vw;
+  background: #000;
+  border: 0.069vw solid #3b3b3b;
+  border-radius: 3.5vw;
+  overflow: hidden;
+}
+
+.sint-bg {
+  position: absolute;
+  width: 59vw;
+  height: 24vw;
+  top: 2vw;
+  left: 0;
+}
+
+.disk-number {
+  position: absolute;
+  width: 16vw;
+  height: 16vw;
+}
+
+.disk-number:nth-child(2) {
+  top: 2vw;
+  left: 4.5vw;
+}
+
+.disk-number:nth-child(3) {
+  top: 2vw;
+  left: 21vw;
+}
+
+.disk-number:nth-child(4) {
+  top: 2vw;
+  right: 4.5vw;
+}
+
+.disk-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.needle {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 4vw;
+  height: auto;
+  transform: translate(-50%, -100%) rotate(18deg);
+  z-index: 2;
+}
+
+.value {
+  position: absolute;
+  top: 48%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background: #d9ee61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #5f47d9;
+  z-index: 3;
+}
+
+#sint_2 {
+  position: relative;
+  width: 33.5vw;
+  height: 18vw;
+  background: #000;
+  border: 0.069vw solid #3b3b3b;
+  border-radius: 3vw;
+  overflow: hidden;
+  padding-top: 1vw;
+}
+
+.sint_2_bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 33.5vw;
+  height: auto;
+  z-index: 0;
+}
+
+.sint-line {
+  position: relative;
+  width: 100%;
+  height: 4vw;
+  margin-bottom: 2vw;
+  z-index: 2;
+}
+
+.sint-line:last-child {
+  margin-bottom: 0;
+}
+
+.track {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 68%;
+  height: 0.6vw;
+  transform: translateY(-50%);
+  background: #d9ee61;
+  border-radius: 40vw;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 2vw;
+  height: 3.6vw;
+  transform: translate(-50%, -50%);
+  background: #5f47d9;
+  border: 0.35vw solid #d9ee61;
+  border-radius: 1vw;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.line-value {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #d9ee61;
+}
+
+#sint_3 {
+  position: relative;
+  width: 92vw;
+  height: 20vw;
+  overflow: hidden;
+  border-radius: 3vw;
+  background: #000;
+  border: 0.069vw solid #3b3b3b;
+  margin-top: 2vw;
+  margin-left: 4vw;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 83vw;
+  height: 15vw;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* секция 2 */
 .playlists {
   display: flex;
   flex-direction: row;
-  gap: 1vw;
+  gap: 1.3vw;
 }
 .obloshka {
   width: 44.9vw;
@@ -58,17 +300,24 @@ body {
 .disk img {
   width: 100%;
 }
+.obloshka {
+  position: relative;
+}
+
 .btn-obloshka {
   position: absolute;
-  top: 15.3vw;
-  left: 19.3vw;
-  width: 4.6vw;
-  height: 4.6vw;
+  top: 37.5%;
+  left: 48%;
+  width: 4vw;
+  height: 4vw;
+  transform: translate(-50%, -50%);
   z-index: 3;
 }
+
 .btn-obloshka img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 .rectangle-obloshka {
   position: absolute;
@@ -92,7 +341,7 @@ body {
   align-items: center;
 }
 .text-obloshka h1 {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat";
   font-size: 2vw;
   font-weight: 100;
   color: #d9ee61;
@@ -107,8 +356,658 @@ body {
   right: 1.7vw;
   bottom: 2.3vw;
   z-index: 5;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat";
   font-size: 1.323vw;
   font-weight: 100;
   color: #616161;
+}
+
+.obloshka-mini {
+  position: relative;
+  width: 6.3vw;
+  height: 47.3vw;
+  overflow: hidden;
+}
+
+.mini-heart {
+  position: absolute;
+  top: 3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3vw;
+  height: 3vw;
+}
+.text-vertical {
+  position: absolute;
+  left: 50%;
+  bottom: 3vw;
+  transform: translateX(-50%) rotate(180deg);
+  margin: 0;
+  writing-mode: vertical-rl;
+  font-size: 2vw;
+  font-family: "Montserrat";
+  font-weight: 200;
+}
+.text-gradient {
+  background: linear-gradient(180deg, #332a6a 0%, #6552d0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.text-solid {
+  color: #d9ee61;
+}
+.playlists {
+  width: fit-content;
+  margin: 0 auto;
+}
+/* секция 5 */
+.section_5 {
+  position: relative;
+  width: 100%;
+  height: 36vw;
+  min-height: 37vw;
+  overflow: hidden;
+  background: #0e0e0e;
+  padding-top: 5vw;
+}
+
+.section5-blur {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section5-btns {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+}
+.section5-btns {
+  margin-top: 2vw;
+}
+.logotip-2 {
+  position: absolute;
+  left: 50%;
+  bottom: -9.6vw;
+  transform: translateX(-50%);
+  width: 92vw;
+  height: auto;
+  z-index: 1;
+}
+a.nav-btn {
+  text-decoration: none;
+}
+
+.none {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.none {
+  display: none !important;
+}
+/* секция 3 */
+.section_3 {
+  position: relative;
+  width: 100%;
+  height: 58.8vw;
+  background: #0e0e0e;
+  overflow: hidden;
+}
+
+.section_2_blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60vw;
+  max-width: 90%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ekran-artists,
+.ekran-artists-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.artists-layout {
+  position: relative;
+  width: 100%;
+  max-width: 83vw;
+  margin: 0 auto;
+  min-height: 43vw;
+  display: grid;
+  grid-template-columns: 1fr 260px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.artist-card {
+  position: relative;
+  width: 15vw;
+  height: 18vw;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(101, 82, 208, 0.45) 100%
+  );
+  box-shadow:
+    0 0 18px rgba(101, 82, 208, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.artist-card {
+  width: 15vw;
+  height: 18vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.artist-card {
+  position: relative;
+  width: 15vw;
+  height: 18vw;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.artist-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.3);
+}
+
+.artist-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(
+    to top,
+    rgba(101, 82, 208, 1),
+    rgba(101, 82, 208, 0.22),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.artist-card-1 {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: start;
+}
+
+.artist-card-2 {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+.artist-card-3 {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  justify-self: center;
+  margin-left: 10vw;
+}
+
+.artist-card-4 {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: end;
+  justify-self: center;
+  margin-right: 10vw;
+}
+
+.artist-like {
+  position: absolute;
+  top: 0.694vw;
+  right: 0.694vw;
+  width: 0.139vw;
+  height: 0.139vw;
+  object-fit: contain;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.artist-play {
+  position: absolute;
+  top: 42.3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.6vw;
+  height: 2.6vw;
+  object-fit: contain;
+  z-index: 3;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.artist-card::before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  width: 5.417vw;
+  height: 5.417vw;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #111111;
+  box-shadow: 0.2vw 0.2vw 0.2vw rgba(164, 233, 15, 0.4);
+  z-index: 2;
+}
+
+.artist-play:hover {
+  transform: translateX(-50%) scale(1.06);
+}
+
+.artist-info {
+  position: absolute;
+  left: 0.694vw;
+  right: 0.694vw;
+  bottom: 1vw;
+  z-index: 3;
+}
+
+.artist-role {
+  font-family: "Montserrat";
+  font-size: 0.694vw;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.208vw;
+}
+
+.artist-name {
+  font-family: "Montserrat";
+  font-size: 1vw;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.artists-center {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  width: 100%;
+  position: relative;
+  margin-top: 5vw;
+}
+
+.artists-center-icon {
+  width: 6.3vw;
+  height: 6.3vw;
+  object-fit: contain;
+}
+
+.artists-search {
+  width: 30vw;
+  height: 3.5vw;
+  border-radius: 3vw;
+  background: #000000;
+  box-shadow:
+    0 0 12px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 0.069vw rgba(217, 238, 97, 0.18);
+  border: 0.069vw #3b3b3b;
+  display: flex;
+  align-items: center;
+  padding: 0 12px 0 14px;
+  gap: 8px;
+}
+
+.artists-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Montserrat";
+  font-size: 1vw;
+  font-weight: 400;
+  color: #d9d9d9;
+  margin-left: 0.5vw;
+}
+
+.artists-search input::placeholder {
+  color: rgba(217, 217, 217, 0.45);
+}
+
+.searchBtn {
+  width: 1.6vw;
+  height: 1.6vw;
+  object-fit: contain;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-right: 1vw;
+}
+.artists-refresh {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artists-refresh img {
+  width: 2.5vw;
+  height: 2.5vw;
+  object-fit: contain;
+}
+.search-message {
+  margin-top: -0.694vw;
+  font-family: "Montserrat";
+  font-size: 1vw;
+  color: #d9ee61;
+  text-align: center;
+}
+/* секция 4.1 */
+.section_playlist {
+  position: relative;
+  width: 100%;
+  background: #0e0e0e;
+  overflow: hidden;
+}
+
+.playlist-help img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.playlist-wrapper {
+  position: relative;
+  display: grid;
+  gap: 1vw;
+  align-items: start;
+}
+.playlist-card {
+  position: relative;
+  background: #000;
+  border: 0.08vw solid rgba(217, 238, 97, 0.22);
+  border-radius: 2vw;
+  box-shadow:
+    0 0 1.4vw rgba(217, 238, 97, 0.12),
+    inset 0 0 0.8vw rgba(217, 238, 97, 0.04);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.playlist-card-big {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  width: 41vw;
+  height: 41vw;
+  margin-left: 7vw;
+}
+
+.playlist-card-top {
+  grid-column: 2;
+  grid-row: 1;
+  width: 41vw;
+  height: 19vw;
+  margin-right: 4vw;
+}
+
+.playlist-card-bottom {
+  grid-column: 2;
+  grid-row: 2;
+  width: 41vw;
+  height: 19vw;
+}
+
+/* header карточки */
+.playlist-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2vw 1.8vw;
+  border-bottom: 0.08vw solid rgba(180, 180, 180, 0.22);
+}
+
+.playlist-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #d9ee61;
+}
+
+.playlist-count {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* тело карточки */
+.playlist-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  padding: 1.4vw;
+}
+
+/* один трек */
+.playlist-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7vw;
+  background: #000000;
+  border: 0.08vw solid rgba(138, 144, 173, 0.28);
+  border-radius: 1.2vw;
+  padding: 0.8vw 1.2vw 0.8vw 0.8vw;
+  box-shadow:
+    0 0 1vw rgba(62, 66, 112, 0.14),
+    inset 0 0 0.5vw rgba(255, 255, 255, 0.02);
+}
+
+.playlist-track-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+  min-width: 0;
+}
+
+/* квадрат с обложкой */
+.track-cover {
+  position: relative;
+  width: 5.2vw;
+  height: 5.2vw;
+  min-width: 5.2vw;
+  border-radius: 0.9vw;
+  overflow: hidden;
+  background: #d9ee61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-cover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3.2vw;
+  height: 3.2vw;
+  transform: translate(-50%, -50%);
+  background: #000000;
+  border-radius: 50%;
+  box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.track-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.5vw;
+  height: 1.5vw;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.track-play:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+.track-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.track-info {
+  min-width: 0;
+}
+.track-artist {
+  font-family: "Montserrat";
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 0.25vw;
+}
+.track-name {
+  font-family: "Montserrat";
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.1;
+}
+.track-like {
+  width: 1.9vw;
+  height: 1.9vw;
+  object-fit: contain;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 1vw;
+}
+.audioPlayer {
+  display: none;
+}
+/* скролл */
+.playlist-card-top,
+.playlist-card-bottom {
+  height: 20vw;
+}
+
+.playlist-card-top .playlist-card-body,
+.playlist-card-bottom .playlist-card-body {
+  height: 16vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.4vw;
+  padding-bottom: 3.5vw;
+}
+
+.playlist-card-top .playlist-card-body::-webkit-scrollbar,
+.playlist-card-bottom .playlist-card-body::-webkit-scrollbar {
+  width: 0.35vw;
+}
+
+.playlist-card-top .playlist-card-body::-webkit-scrollbar-track,
+.playlist-card-bottom .playlist-card-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.playlist-card-top .playlist-card-body::-webkit-scrollbar-thumb,
+.playlist-card-bottom .playlist-card-body::-webkit-scrollbar-thumb {
+  background: rgba(92, 92, 92, 0.5);
+  border-radius: 1vw;
+}
+.playlist-help {
+  position: absolute;
+  top: 3.5vw;
+  right: 4vw;
+  width: 3vw;
+  height: 3vw;
+  z-index: 20;
+  cursor: pointer;
+}
+/* выплывающее окно  */
+.help-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3vw;
+  height: 3vw;
+  object-fit: contain;
+  transition: opacity 0.25s ease;
+}
+.help-icon-default {
+  opacity: 1;
+}
+.help-icon-hover {
+  opacity: 0;
+}
+.help-tooltip {
+  position: absolute;
+  top: 4.2vw;
+  right: 1vw;
+  width: 30vw;
+  padding: 2vw 2.4vw;
+  border-radius: 2vw;
+  background: rgba(0, 0, 0, 0.96);
+  border: 0.08vw solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 0 2vw rgba(161, 55, 236, 0.08),
+    0 0 4vw rgba(107, 79, 244, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.6vw);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+.help-tooltip p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  line-height: 1.3;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.45);
+}
+.playlist-help:hover .help-icon-default {
+  opacity: 0;
+}
+
+.playlist-help:hover .help-icon-hover {
+  opacity: 1;
+}
+
+.playlist-help:hover .help-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }

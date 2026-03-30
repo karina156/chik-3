@@ -8,317 +8,1051 @@
     <script defer src="javascripts/scripts.js"></script>
     <!-- <link rel="icon" href="" sizes="any"> -->
   </head>
-  <section class="section_1">
-    <div class="logotip"></div>
-    <div class="btn">
-      <div id="btn_1">Плейлисты</div>
-      <div id="btn_2">Артисты</div>
-      <div id="btn_3">Создать плейлист</div>
-    </div>
-    <div class="sints">
-      <div id="sint_1"></div>
-      <div id="sint_2"></div>
-    </div>
-    <div class="sint_end">
-      <div id="sint_3"></div>
-    </div>
-  </section>
-  <section class="section_2">
-    <p class="zagolovok">Плейлисты</p>
-    <div class="playlists">
-      <div class="playlist_1">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+  <body>
+    <section class="section_1">
+      <img class="bg-blur" src="../chik-3/images/blur.png" alt="" />
+      <img class="logotip" src="../chik-3/images/logo.svg" alt="" />
+
+      <div class="btn">
+        <div id="btn_1" class="nav-btn">Плейлисты</div>
+        <div id="btn_2" class="nav-btn">Артисты</div>
+        <div id="btn_3" class="nav-btn">Создать плейлист</div>
+      </div>
+
+      <div class="sints">
+        <div id="sint_1">
+          <img class="sint-bg" src="../chik-3/images/back1.svg" alt="" />
+
+          <div class="disk-number">
+            <img class="disk-img" src="../chik-3/images/disk2.png" alt="" />
+            <p class="value">17</p>
           </div>
 
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
+          <div class="disk-number">
+            <img class="disk-img" src="../chik-3/images/disk3.png" alt="" />
+            <p class="value">25</p>
           </div>
 
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
+          <div class="disk-number">
+            <img class="disk-img" src="../chik-3/images/disk1.png" alt="" />
+            <p class="value">19</p>
           </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
         </div>
-        <div class="obloshka-mini">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
+
+        <div id="sint_2">
+          <img class="sint_2_bg" src="../chik-3/images/birds.png" alt="" />
+
+          <div class="sint-line">
+            <div class="track"></div>
+            <div class="thumb"></div>
+            <p class="line-value">25</p>
+          </div>
+
+          <div class="sint-line">
+            <div class="track"></div>
+            <div class="thumb"></div>
+            <p class="line-value">70</p>
+          </div>
+
+          <div class="sint-line">
+            <div class="track"></div>
+            <div class="thumb"></div>
+            <p class="line-value">33</p>
+          </div>
         </div>
       </div>
 
-      <div class="playlist_2">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
-          </div>
-
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
-          </div>
-
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
-          </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
+      <div class="sints-bottom">
+        <div id="sint_3">
+          <img class="back-3" src="" alt="" />
+          <img class="frame frame-1" src="../chik-3/images/cadr1.png" alt="" />
+          <img class="frame frame-2" src="../chik-3/images/cadr2.png" alt="" />
         </div>
-        <div class="obloshka-mini">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
+      </div>
+    </section>
+    <section id="playlists" class="section_2">
+      <p class="zagolovok">Плейлисты</p>
+      <div class="playlists">
+        <div class="playlist_2">
+          <div class="obloshka none">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/vesna-na-dvore.mp3"
+            ></audio>
+
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>Для весеннего чириканья</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+            <p>
+              Знаете ли вы, что весна для птиц — это не просто время года, а
+              целый праздник звуков, солнца и первых трелей? Самое время
+              услышать весеннее чириканье.
+            </p>
+          </div>
+          <div class="obloshka-mini">
+            <img src="../chik-3/images/Playlist-mini.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-gradient">Для весеннего чириканья</p>
+          </div>
+        </div>
+
+        <div class="playlist_3">
+          <div class="obloshka none">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var2.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/Vpolete.mp3"
+            ></audio>
+
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>Чик в полёте</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+
+            <p>
+              Знаете ли вы, что полёт птицы может звучать как песня свободы,
+              лёгкости и ветра? Послушайте, как раскрывается это настроение в
+              «Чик в полёте».
+            </p>
+          </div>
+          <div class="obloshka-mini">
+            <img src="../chik-3/images/Playlist-mini1.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-solid">Чик в полёте</p>
+          </div>
+        </div>
+
+        <div class="playlist_4">
+          <div class="obloshka none">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/Polnichik.mp3"
+            ></audio>
+
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>Полный чик</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+
+            <p>
+              Знаете ли вы, что иногда птицам хочется сказать миру сразу всё —
+              громко, звонко и без остановки? Слушайте настоящий взрыв пернатых
+              эмоций.
+            </p>
+          </div>
+          <div class="obloshka-mini">
+            <img src="../chik-3/images/Playlist-mini.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-gradient">Полный чик</p>
+          </div>
+        </div>
+
+        <div class="playlist_5">
+          <div class="obloshka none">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var2.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/GdeGnezdo.mp3"
+            ></audio>
+
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>В поисках гнезда</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+
+            <p>
+              Знаете ли вы, что даже у птиц есть свои мечты о доме, уюте и
+              месте, куда хочется возвращаться? Услышьте эту историю в треке «В
+              поисках гнезда».
+            </p>
+          </div>
+          <div class="obloshka-mini">
+            <img src="../chik-3/images/Playlist-mini1.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-solid">В поисках гнезда</p>
+          </div>
+        </div>
+
+        <div class="playlist_6">
+          <div class="obloshka none">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/wedding.mp3"
+            ></audio>
+
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>Брачный сезон</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+
+            <p>
+              Знаете ли вы, что птичьи песни могут быть не только красивыми, но
+              и очень важными — ведь именно так начинается брачный сезон!
+            </p>
+          </div>
+          <div class="obloshka-mini">
+            <img src="../chik-3/images/Playlist-mini.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-gradient">Брачный сезон</p>
+          </div>
+        </div>
+
+        <div class="playlist_7">
+          <div class="obloshka none">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var2.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/melanholic.mp3"
+            ></audio>
+
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>Грусть по чириканью</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+
+            <p>
+              Знаете ли вы, что даже самые звонкие птицы иногда грустят,
+              вспоминая ушедшие мгновения, полёты и голоса? Нет? Тогда
+              прислушайтесь к этой тихой мелодии.
+            </p>
+          </div>
+          <div class="obloshka-mini">
+            <img src="../chik-3/images/Playlist-mini1.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-solid">Грусть по чириканью</p>
+          </div>
+        </div>
+
+        <div class="playlist_8">
+          <div class="obloshka">
+            <div class="background-image-obloshka">
+              <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+            </div>
+
+            <div class="disk">
+              <img src="../chik-3/images/disk.png" alt="" />
+            </div>
+
+            <div class="btn-obloshka">
+              <img class="playBtn" src="../chik-3/images/Play.svg" alt="" />
+            </div>
+            <audio class="audioPlayer" src="../chik-3/audio/love.mp3"></audio>
+            <div class="rectangle-obloshka"></div>
+
+            <div class="text-obloshka">
+              <h1>Любовь по-птичьи</h1>
+              <img class="likeBtn" src="../chik-3/images/like.svg" alt="" />
+            </div>
+
+            <p>
+              Знаете ли вы, что воробьи не только похожи на птенцов голубей, но
+              и любят так же нежно, как и дети? Нет? Тогда самое время услышать
+              об этом в нашем плейлисте.
+            </p>
+          </div>
+          <div class="obloshka-mini none">
+            <img src="../chik-3/images/Playlist-mini.png" alt="" />
+            <img
+              class="mini-heart likeBtn"
+              src="../chik-3/images/like.svg"
+              alt=""
+            />
+            <p class="text-vertical text-gradient">Любовь по-птичьи</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="artists" class="section_3">
+      <img class="section_2_blur" src="../chik-3/images/blur.png" alt="blur" />
+      <p class="zagolovok">Артисты</p>
+
+      <div class="ekran-artists">
+        <div class="artists-layout">
+          <div class="artist-card artist-card-1">
+            <audio class="audioPlayer" src="../chik-3/audio/Charli.mp3"></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-1.png"
+              alt="Чикли XCX"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Чикли XCX</p>
+            </div>
+          </div>
+
+          <div class="artist-card artist-card-2">
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/instasamka.mp3"
+            ></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-2.png"
+              alt="Чикасамка"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Чикасамка</p>
+            </div>
+          </div>
+
+          <div class="artist-card artist-card-3">
+            <audio class="audioPlayer" src="../chik-3/audio/morgen.mp3"></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-3.png"
+              alt="Чикиштерн"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Чикиштерн</p>
+            </div>
+          </div>
+
+          <div class="artist-card artist-card-4">
+            <audio class="audioPlayer" src="../chik-3/audio/bebre.mp3"></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-4.png"
+              alt="Чикстин Бебир"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Чикстин Бебир</p>
+            </div>
+          </div>
+
+          <div class="artists-center">
+            <img
+              class="artists-center-icon"
+              src="../chik-3/images/icon.svg"
+              alt="Иконка"
+            />
+
+            <div class="artists-search">
+              <input type="text" placeholder="Найти исполнителя..." />
+              <img
+                class="searchBtn"
+                src="../chik-3/images/search.svg"
+                alt="Поиск"
+              />
+            </div>
+
+            <button class="artists-refresh" type="button" aria-label="Обновить">
+              <img src="../chik-3/images/reload.svg" alt="Обновить" />
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="playlist_3">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+      <div class="ekran-artists-2 none">
+        <div class="artists-layout">
+          <div class="artist-card artist-card-1">
+            <audio
+              class="audioPlayer"
+              src="../chik-3/audio/Ivanzolo.mp3"
+            ></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-5.png"
+              alt="Вороб Золо"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Вороб Золо</p>
+            </div>
           </div>
 
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
+          <div class="artist-card artist-card-2">
+            <audio class="audioPlayer" src="../chik-3/audio/Molly.mp3"></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-6.png"
+              alt="Чирикнутая"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Чирикнутая молли</p>
+            </div>
           </div>
 
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
+          <div class="artist-card artist-card-3">
+            <audio class="audioPlayer" src="../chik-3/audio/valya.mp3"></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-7.png"
+              alt="Чиковал"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Валя Чиковал</p>
+            </div>
           </div>
 
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
+          <div class="artist-card artist-card-4">
+            <audio class="audioPlayer" src="../chik-3/audio/selena.mp3"></audio>
+            <img
+              class="artist-cover"
+              src="../chik-3/images/artist-8.png"
+              alt="Селена Чикес"
+            />
+            <img
+              class="artist-like likeBtn"
+              src="../chik-3/images/like.svg"
+              alt="Лайк"
+            />
+            <img
+              class="artist-play playBtn"
+              src="../chik-3/images/Play.svg"
+              alt="Воспроизвести"
+            />
+            <div class="artist-info">
+              <p class="artist-role">Исполнитель</p>
+              <p class="artist-name">Селена Чикес</p>
+            </div>
           </div>
 
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
-        </div>
-        <div class="obloshka-mini">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
-        </div>
-      </div>
+          <div class="artists-center">
+            <img
+              class="artists-center-icon"
+              src="../chik-3/images/icon.svg"
+              alt="Иконка"
+            />
 
-      <div class="playlist_4">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+            <div class="artists-search">
+              <input type="text" placeholder="Найти исполнителя..." />
+              <img
+                class="searchBtn"
+                src="../chik-3/images/search.svg"
+                alt="Поиск"
+              />
+            </div>
+
+            <button class="artists-refresh" type="button" aria-label="Обновить">
+              <img src="../chik-3/images/reload.svg" alt="Обновить" />
+            </button>
           </div>
-
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
-          </div>
-
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
-          </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
-        </div>
-        <div class="obloshka-mini">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
-        </div>
-      </div>
-
-      <div class="playlist_5">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
-          </div>
-
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
-          </div>
-
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
-          </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
-        </div>
-        <div class="obloshka-mini">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
-        </div>
-      </div>
-
-      <div class="playlist_6">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
-          </div>
-
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
-          </div>
-
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
-          </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
-        </div>
-        <div class="obloshka-mini">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
         </div>
       </div>
+    </section>
+    <section>
+      <section class="section_playlist">
+        <p class="zagolovok">Создайте свой плейлист</p>
 
-      <div class="playlist_7">
-        <div class="obloshka none">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
+        <div class="playlist-help">
+          <img
+            class="help-icon help-icon-default"
+            src="../chik-3/images/question.svg"
+            alt="Подсказка"
+          />
+          <img
+            class="help-icon help-icon-hover"
+            src="../chik-3/images/question-hover.svg"
+            alt="Подсказка"
+          />
+
+          <div class="help-tooltip">
+            <p>
+              Прослушайте песни и поставьте лайк,<br />чтобы добавить их в свой
+              плейлист
+            </p>
           </div>
-
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
-          </div>
-
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
-          </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
         </div>
-        <div class="obloshka-mini none">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
+
+        <div class="playlist-wrapper">
+          <div class="playlist-card playlist-card-big">
+            <div class="playlist-card-header">
+              <p class="playlist-title">Популярное</p>
+              <p class="playlist-count">4 трека</p>
+            </div>
+
+            <div class="playlist-card-body">
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-1.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/image1.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-2.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-3.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-4.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="playlist-card playlist-card-top">
+            <div class="playlist-card-header">
+              <p class="playlist-title">Поп</p>
+              <p class="playlist-count">8 треков</p>
+            </div>
+
+            <div class="playlist-card-body">
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-5.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-6.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-7.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-8.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="playlist-card playlist-card-bottom">
+            <div class="playlist-card-header">
+              <p class="playlist-title">Реп</p>
+              <p class="playlist-count">8 треков</p>
+            </div>
+
+            <div class="playlist-card-body">
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-9.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-10.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-11.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+
+              <div class="playlist-track">
+                <audio
+                  class="audioPlayer"
+                  src="../chik-3/audio/track-12.mp3"
+                ></audio>
+                <div class="playlist-track-left">
+                  <div class="track-cover">
+                    <img
+                      class="track-cover-img"
+                      src="../chik-3/images/track-cover.png"
+                      alt="Обложка трека"
+                    />
+                    <img
+                      class="track-play playBtn"
+                      src="../chik-3/images/Play.svg"
+                      alt="Play"
+                    />
+                  </div>
+                  <div class="track-info">
+                    <p class="track-artist">Вороб Золо</p>
+                    <p class="track-name">Марабу</p>
+                  </div>
+                </div>
+                <img
+                  class="track-like likeBtn"
+                  src="../chik-3/images/like.svg"
+                  alt="Лайк"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section id="create" class="section_4_2">
+        <p class="zagolovok">Создайте свою обложку</p>
+      </section>
+    </section>
+    <section class="section_5">
+      <img
+        class="bg-blur section5-blur"
+        src="../chik-3/images/blur.png"
+        alt=""
+      />
+
+      <div class="btn section5-btns">
+        <a
+          id="btn_4"
+          class="nav-btn"
+          href="https://hsedesign.ru/designer/karina-manukyan-3bc6fb6adb2e4c03b61414b1a7690fb8"
+          >Карина Манукян</a
+        >
+        <a
+          id="btn_5"
+          class="nav-btn"
+          href="https://hsedesign.ru/designer/9ebeb33f42f548999159db8117da2774"
+          >Камила Рихтер</a
+        >
+        <a
+          id="btn_6"
+          class="nav-btn"
+          href="https://hsedesign.ru/designer/9f56f07410aa448eb91e3331cb05e146"
+          >Анна Комкова</a
+        >
       </div>
 
-      <div class="playlist_8">
-        <div class="obloshka">
-          <div class="background-image-obloshka">
-            <img src="../chik-3/images/Playlist-big-var1.png" alt="" />
-          </div>
-
-          <div class="disk">
-            <img src="../chik-3/images/disk.png" alt="" />
-          </div>
-
-          <div class="btn-obloshka">
-            <img src="../chik-3/images/Play.svg" alt="" />
-          </div>
-
-          <div class="rectangle-obloshka"></div>
-
-          <div class="text-obloshka">
-            <h1>Любовь по-птичьи</h1>
-            <img src="../chik-3/images/like.svg" alt="" />
-          </div>
-
-          <p>
-            Знаете ли вы, что воробьи не только похожи на птенцов голубей, но и
-            любят так же нежно, как и дети? Нет? Тогда самое время услышать об
-            этом в нашем плейлисте.
-          </p>
-        </div>
-        <div class="obloshka-mini none">
-          <img src="../chik-3/images/Playlist-mini.png" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section_3">
-    <p class="zagolovok">Создайте свой плейлист</p>
-    <div class="plashka-big">
-      <div class="Pop">
-        <p>Поп</p>
-        <p>4 трека</p>
-      </div>
-      <div class="track"></div>
-      <div class="track"></div>
-      <div class="track"></div>
-      <div class="track"></div>
-    </div>
-    <div class="plashka-small">
-      <div class="Rap">
-        <p>Рэп</p>
-        <p>4 трека</p>
-      </div>
-      <div class="track"></div>
-      <div class="track"></div>
-      <div class="track"></div>
-      <div class="track"></div>
-    </div>
-    <div class="plashka-small">
-      <div class="Rock">
-        <p>Рок</p>
-        <p>4 трека</p>
-      </div>
-      <div class="track"></div>
-      <div class="track"></div>
-      <div class="track"></div>
-      <div class="track"></div>
-    </div>
-  </section>
-  <section class="section_4">
-    <p class="zagolovok">Создайте свою обложку</p>
-  </section>
-  <section class="section_5"></section>
-  <body></body>
+      <img class="logotip-2" src="../chik-3/images/logo.svg" alt="" />
+    </section>
+  </body>
 </html>
