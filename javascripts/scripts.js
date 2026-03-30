@@ -293,3 +293,146 @@ function playPlaylistMusic() {
 }
 
 playPlaylistMusic();
+
+
+
+changeCoverColor()
+changeCoverText()
+changeTextColor()
+changeFont()
+setPreviewTextStyles()
+
+function changeCoverColor() {
+    let preview = document.querySelector('.cover-preview')
+    let coverColorButtons = document.querySelectorAll('.cover-bg-group .color-btn')
+
+    if (!preview || !coverColorButtons.length) return
+
+    coverColorButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            coverColorButtons.forEach((all) => {
+                all.classList.remove('active')
+            })
+
+            btn.classList.add('active')
+
+            if (btn.classList.contains('color-white')) {
+                preview.style.background = '#d9d9d9'
+            } else if (btn.classList.contains('color-black')) {
+                preview.style.background = '#000000'
+            } else if (btn.classList.contains('color-gradient-mix')) {
+                preview.style.background = 'linear-gradient(180deg, #d9ee61 0%, #c8cbbe 42%, #6552d0 100%)'
+            } else if (btn.classList.contains('color-gradient-pink')) {
+                preview.style.background = 'linear-gradient(180deg, #cf58ee 0%, #8660d9 100%)'
+            } else if (btn.classList.contains('color-gradient-blue')) {
+                preview.style.background = 'linear-gradient(180deg, #6552d0 0%, #372c8a 100%)'
+            }
+        })
+    })
+}
+
+function changeCoverText() {
+    let nameInput = document.querySelector('.cover-name-input')
+    let previewTitle = document.querySelector('.cover-preview-title')
+
+    if (!nameInput || !previewTitle) return
+
+    nameInput.addEventListener('input', () => {
+        previewTitle.textContent = nameInput.value
+    })
+}
+
+function changeTextColor() {
+    let textColorButtons = document.querySelectorAll('.cover-text-group .color-btn')
+    let previewTitle = document.querySelector('.cover-preview-title')
+
+    if (!previewTitle || !textColorButtons.length) return
+
+    textColorButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            textColorButtons.forEach((all) => {
+                all.classList.remove('active')
+            })
+
+            btn.classList.add('active')
+
+            previewTitle.style.background = 'none'
+            previewTitle.style.webkitBackgroundClip = 'initial'
+            previewTitle.style.webkitTextFillColor = 'initial'
+            previewTitle.style.backgroundClip = 'initial'
+            previewTitle.style.color = '#ffffff'
+
+            if (btn.classList.contains('color-white')) {
+                previewTitle.style.color = '#d9d9d9'
+            } else if (btn.classList.contains('color-black')) {
+                previewTitle.style.color = '#000000'
+            } else if (btn.classList.contains('color-gradient-mix')) {
+                previewTitle.style.background = 'linear-gradient(180deg, #d9ee61 0%, #c8cbbe 42%, #6552d0 100%)'
+                previewTitle.style.webkitBackgroundClip = 'text'
+                previewTitle.style.webkitTextFillColor = 'transparent'
+                previewTitle.style.backgroundClip = 'text'
+                previewTitle.style.color = 'transparent'
+            } else if (btn.classList.contains('color-gradient-pink')) {
+                previewTitle.style.background = 'linear-gradient(180deg, #cf58ee 0%, #8660d9 100%)'
+                previewTitle.style.webkitBackgroundClip = 'text'
+                previewTitle.style.webkitTextFillColor = 'transparent'
+                previewTitle.style.backgroundClip = 'text'
+                previewTitle.style.color = 'transparent'
+            } else if (btn.classList.contains('color-gradient-blue')) {
+                previewTitle.style.background = 'linear-gradient(180deg, #6552d0 0%, #372c8a 100%)'
+                previewTitle.style.webkitBackgroundClip = 'text'
+                previewTitle.style.webkitTextFillColor = 'transparent'
+                previewTitle.style.backgroundClip = 'text'
+                previewTitle.style.color = 'transparent'
+            }
+        })
+    })
+}
+
+function changeFont() {
+    let fontButtons = document.querySelectorAll('.font-btn')
+    let previewTitle = document.querySelector('.cover-preview-title')
+
+    if (!previewTitle || !fontButtons.length) return
+
+    fontButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            fontButtons.forEach((all) => {
+                all.classList.remove('active')
+            })
+
+            btn.classList.add('active')
+
+            if (btn.classList.contains('font-btn-1')) {
+                previewTitle.style.fontFamily = '"Montserrat", sans-serif'
+                previewTitle.style.fontWeight = '300'
+            } else if (btn.classList.contains('font-btn-2')) {
+                previewTitle.style.fontFamily = '"Montserrat", sans-serif'
+                previewTitle.style.fontWeight = '700'
+            } else if (btn.classList.contains('font-btn-3')) {
+                previewTitle.style.fontFamily = '"Times New Roman", serif'
+                previewTitle.style.fontWeight = '400'
+            }
+        })
+    })
+}
+
+function setPreviewTextStyles() {
+    let preview = document.querySelector('.cover-preview')
+    let previewTitle = document.querySelector('.cover-preview-title')
+
+    if (!preview || !previewTitle) return
+
+    preview.style.position = 'relative'
+
+    previewTitle.style.position = 'absolute'
+    previewTitle.style.top = '50%'
+    previewTitle.style.left = '50%'
+    previewTitle.style.transform = 'translate(-50%, -50%)'
+    previewTitle.style.margin = '0'
+    previewTitle.style.width = '80%'
+    previewTitle.style.textAlign = 'center'
+    previewTitle.style.fontSize = '5vw'
+    previewTitle.style.lineHeight = '1'
+    previewTitle.style.color = '#ffffff'
+}

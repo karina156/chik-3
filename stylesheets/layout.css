@@ -784,6 +784,7 @@ a.nav-btn {
   height: 19vw;
 }
 
+/* header карточки */
 .playlist-card-header {
   display: flex;
   align-items: center;
@@ -806,6 +807,7 @@ a.nav-btn {
   color: rgba(255, 255, 255, 0.62);
 }
 
+/* тело карточки */
 .playlist-card-body {
   display: flex;
   flex-direction: column;
@@ -813,6 +815,7 @@ a.nav-btn {
   padding: 1.4vw;
 }
 
+/* один трек */
 .playlist-track {
   position: relative;
   display: flex;
@@ -835,6 +838,7 @@ a.nav-btn {
   min-width: 0;
 }
 
+/* квадрат с обложкой */
 .track-cover {
   position: relative;
   width: 5.2vw;
@@ -1014,25 +1018,23 @@ a.nav-btn {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #050505;
+  background: #0e0e0e;
   padding: 1.8vw 3.8vw 3vw;
   overflow: hidden;
 }
 
 .section-cover-create .zagolovok {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.1vw;
-  font-weight: 500;
-  color: #d9ee61;
-  margin-bottom: 2.5vw;
+  margin-left: -0.3vw;
 }
 
 .cover-help {
   position: absolute;
-  top: 1.2vw;
-  right: 3vw;
-  width: 3.2vw;
-  height: 3.2vw;
+  top: 6.7vw;
+  right: 4vw;
+  width: 3vw;
+  height: 3vw;
+  z-index: 20;
+  cursor: pointer;
   z-index: 10;
 }
 
@@ -1052,7 +1054,6 @@ a.nav-btn {
   z-index: 2;
 }
 
-/* левая часть */
 .cover-preview-block {
   display: flex;
   flex-direction: column;
@@ -1060,8 +1061,8 @@ a.nav-btn {
 }
 
 .cover-preview {
-  width: 100%;
-  height: 41vw;
+  width: 47vw;
+  height: 47vw;
   border-radius: 2.6vw;
   background: #000000;
   border: 0.08vw solid rgba(217, 238, 97, 0.25);
@@ -1072,16 +1073,6 @@ a.nav-btn {
   overflow: hidden;
 }
 
-.cover-preview-title {
-  position: absolute;
-  left: 2vw;
-  bottom: 2vw;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #ffffff;
-}
-
 .cover-save-btn {
   width: 100%;
   height: 4.2vw;
@@ -1090,7 +1081,7 @@ a.nav-btn {
   background: #d9ee61;
   color: #6552d0;
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
+  font-size: 1.6vw;
   font-weight: 500;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -1103,18 +1094,17 @@ a.nav-btn {
 /* правая часть */
 .cover-settings {
   position: relative;
-  padding-top: 0.2vw;
   z-index: 2;
 }
 
 /* группы */
 .cover-option-group {
-  margin-bottom: 1.5vw;
+  margin-bottom: 3vw;
 }
 
 .cover-option-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   font-weight: 400;
   color: #616161;
   margin-bottom: 0.9vw;
@@ -1130,7 +1120,7 @@ a.nav-btn {
 
 .color-btn {
   width: 7.3vw;
-  height: 7.1vw;
+  height: 7.3vw;
   border-radius: 0.9vw;
   border: 0.08vw solid rgba(255, 255, 255, 0.12);
   cursor: pointer;
@@ -1163,8 +1153,8 @@ a.nav-btn {
 
 /* input */
 .cover-name-input {
-  width: 100%;
-  height: 4.1vw;
+  width: 42.6vw;
+  height: 4vw;
   border-radius: 999vw;
   border: none;
   outline: none;
@@ -1174,7 +1164,7 @@ a.nav-btn {
     inset 0 0 0 0.08vw rgba(255, 255, 255, 0.08);
   padding: 0 1.6vw;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: #ffffff;
 }
 
