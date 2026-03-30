@@ -14,7 +14,7 @@ body {
 .section_1 {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   overflow: hidden;
 }
 
@@ -306,7 +306,7 @@ html {
 
 .btn-obloshka {
   position: absolute;
-  top: 37.5%;
+  top: calc(50% - 6vw);
   left: 48%;
   width: 4vw;
   height: 4vw;
@@ -784,7 +784,6 @@ a.nav-btn {
   height: 19vw;
 }
 
-/* header карточки */
 .playlist-card-header {
   display: flex;
   align-items: center;
@@ -807,7 +806,6 @@ a.nav-btn {
   color: rgba(255, 255, 255, 0.62);
 }
 
-/* тело карточки */
 .playlist-card-body {
   display: flex;
   flex-direction: column;
@@ -815,7 +813,6 @@ a.nav-btn {
   padding: 1.4vw;
 }
 
-/* один трек */
 .playlist-track {
   position: relative;
   display: flex;
@@ -838,7 +835,6 @@ a.nav-btn {
   min-width: 0;
 }
 
-/* квадрат с обложкой */
 .track-cover {
   position: relative;
   width: 5.2vw;
@@ -1010,4 +1006,228 @@ a.nav-btn {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/* секция 4.2 */
+
+.section-cover-create {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #050505;
+  padding: 1.8vw 3.8vw 3vw;
+  overflow: hidden;
+}
+
+.section-cover-create .zagolovok {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1vw;
+  font-weight: 500;
+  color: #d9ee61;
+  margin-bottom: 2.5vw;
+}
+
+.cover-help {
+  position: absolute;
+  top: 1.2vw;
+  right: 3vw;
+  width: 3.2vw;
+  height: 3.2vw;
+  z-index: 10;
+}
+
+.cover-help img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.cover-create-layout {
+  display: grid;
+  grid-template-columns: 47vw 1fr;
+  gap: 1.4vw;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+
+/* левая часть */
+.cover-preview-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.cover-preview {
+  width: 100%;
+  height: 41vw;
+  border-radius: 2.6vw;
+  background: #000000;
+  border: 0.08vw solid rgba(217, 238, 97, 0.25);
+  box-shadow:
+    0 0 1.4vw rgba(217, 238, 97, 0.12),
+    inset 0 0 0.8vw rgba(217, 238, 97, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-preview-title {
+  position: absolute;
+  left: 2vw;
+  bottom: 2vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.cover-save-btn {
+  width: 100%;
+  height: 4.2vw;
+  border: none;
+  border-radius: 999vw;
+  background: #d9ee61;
+  color: #6552d0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cover-save-btn:hover {
+  transform: scale(1.01);
+}
+
+/* правая часть */
+.cover-settings {
+  position: relative;
+  padding-top: 0.2vw;
+  z-index: 2;
+}
+
+/* группы */
+.cover-option-group {
+  margin-bottom: 1.5vw;
+}
+
+.cover-option-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 400;
+  color: #616161;
+  margin-bottom: 0.9vw;
+}
+
+/* цвета */
+.cover-colors {
+  display: flex;
+  align-items: center;
+  gap: 1.4vw;
+  flex-wrap: wrap;
+}
+
+.color-btn {
+  width: 7.3vw;
+  height: 7.1vw;
+  border-radius: 0.9vw;
+  border: 0.08vw solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.color-btn.active {
+  box-shadow: 0 0 0 0.3vw rgba(255, 255, 255, 0.1);
+}
+
+.color-white {
+  background: #d9d9d9;
+}
+
+.color-black {
+  background: #000000;
+}
+
+.color-gradient-mix {
+  background: linear-gradient(180deg, #d9ee61 0%, #c8cbbe 42%, #6552d0 100%);
+}
+
+.color-gradient-pink {
+  background: linear-gradient(180deg, #cf58ee 0%, #8660d9 100%);
+}
+
+.color-gradient-blue {
+  background: linear-gradient(180deg, #6552d0 0%, #372c8a 100%);
+}
+
+/* input */
+.cover-name-input {
+  width: 100%;
+  height: 4.1vw;
+  border-radius: 999vw;
+  border: none;
+  outline: none;
+  background: #050505;
+  box-shadow:
+    0 0 1vw rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.08vw rgba(255, 255, 255, 0.08);
+  padding: 0 1.6vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  color: #ffffff;
+}
+
+.cover-name-input::placeholder {
+  color: #555555;
+}
+
+/* шрифты */
+.cover-fonts {
+  display: flex;
+  align-items: center;
+  gap: 1.4vw;
+  flex-wrap: wrap;
+}
+
+.font-btn {
+  width: 13vw;
+  height: 12.5vw;
+  border-radius: 1.5vw;
+  border: 0.08vw solid rgba(255, 255, 255, 0.12);
+  background: #050505;
+  box-shadow:
+    0 0 1vw rgba(255, 255, 255, 0.05),
+    inset 0 0 0.4vw rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-btn span {
+  font-size: 5.8vw;
+  line-height: 1;
+  color: #8f8f8f;
+}
+
+.font-btn-1 span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.font-btn-2 span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.font-btn-3 span {
+  font-family: "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.font-btn.active {
+  box-shadow:
+    0 0 0 0.2vw rgba(217, 238, 97, 0.25),
+    0 0 1vw rgba(255, 255, 255, 0.05);
 }

@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+  .btn-obloshka {
+    top: calc(50% - 5vw);
+    left: 48%;
+  }
+}
+/* секция 4.2 */
+
+@media (max-width: 900px) {
+  .section-cover-create {
+    padding: 4vw 4vw 7vw;
+  }
+
+  .section-cover-create .zagolovok {
+    font-size: 4.8vw;
+    margin-bottom: 4vw;
+  }
+
+  .cover-help {
+    width: 6vw;
+    height: 6vw;
+    top: 3vw;
+    right: 4vw;
+  }
+
+  .cover-create-layout {
+    grid-template-columns: 1fr;
+    gap: 5vw;
+  }
+
+  .cover-preview {
+    height: 60vw;
+    border-radius: 4vw;
+  }
+
+  .cover-preview-title {
+    left: 3vw;
+    bottom: 3vw;
+    font-size: 4vw;
+  }
+
+  .cover-save-btn {
+    height: 8vw;
+    font-size: 4vw;
+  }
+
+  .cover-bg-shape {
+    width: 82vw;
+    height: 90vw;
+    top: -8vw;
+    right: -10vw;
+  }
+
+  .cover-option-group {
+    margin-bottom: 3vw;
+  }
+
+  .cover-option-title {
+    font-size: 3.8vw;
+    margin-bottom: 2vw;
+  }
+
+  .cover-colors {
+    gap: 2vw;
+  }
+
+  .color-btn {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 1.8vw;
+  }
+
+  .cover-name-input {
+    height: 8vw;
+    font-size: 3vw;
+    padding: 0 3vw;
+  }
+
+  .cover-fonts {
+    gap: 2vw;
+  }
+
+  .font-btn {
+    width: 24vw;
+    height: 22vw;
+    border-radius: 3vw;
+  }
+
+  .font-btn span {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-cover-create .zagolovok {
+    font-size: 6vw;
+  }
+
+  .cover-preview {
+    height: 72vw;
+  }
+
+  .cover-save-btn {
+    height: 11vw;
+    font-size: 5vw;
+  }
+
+  .cover-option-title {
+    font-size: 5vw;
+  }
+
+  .color-btn {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .cover-name-input {
+    height: 11vw;
+    font-size: 4vw;
+  }
+
+  .font-btn {
+    width: 28vw;
+    height: 26vw;
+  }
+
+  .font-btn span {
+    font-size: 12vw;
+  }
+}

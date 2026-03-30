@@ -6,7 +6,7 @@
     <title>Интерактивный веб-плакат</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script defer src="javascripts/scripts.js"></script>
-    <!-- <link rel="icon" href="" sizes="any"> -->
+    <link rel="icon" href="../chik-3/images/icon.svg" sizes="any" />
   </head>
   <body>
     <section class="section_1">
@@ -641,7 +641,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-1.mp3"
+                  src="../chik-3/audio/pop-3.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -671,7 +671,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-2.mp3"
+                  src="../chik-3/audio/love.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -701,7 +701,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-3.mp3"
+                  src="../chik-3/audio/rep-1.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -731,7 +731,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-4.mp3"
+                  src="../chik-3/audio/etorock-star.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -763,14 +763,14 @@
           <div class="playlist-card playlist-card-top">
             <div class="playlist-card-header">
               <p class="playlist-title">Поп</p>
-              <p class="playlist-count">8 треков</p>
+              <p class="playlist-count">4 трека</p>
             </div>
 
             <div class="playlist-card-body">
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-5.mp3"
+                  src="../chik-3/audio/pop-2.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -800,7 +800,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-6.mp3"
+                  src="../chik-3/audio/pop-1.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -830,7 +830,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-7.mp3"
+                  src="../chik-3/audio/pop-4.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -860,7 +860,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-8.mp3"
+                  src="../chik-3/audio/pop-5.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -892,14 +892,13 @@
           <div class="playlist-card playlist-card-bottom">
             <div class="playlist-card-header">
               <p class="playlist-title">Реп</p>
-              <p class="playlist-count">8 треков</p>
+              <p class="playlist-count">4 трека</p>
             </div>
-
             <div class="playlist-card-body">
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-9.mp3"
+                  src="../chik-3/audio/rep-2.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -929,7 +928,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-10.mp3"
+                  src="../chik-3/audio/rep-4.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -959,7 +958,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-11.mp3"
+                  src="../chik-3/audio/rep-5.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -989,7 +988,7 @@
               <div class="playlist-track">
                 <audio
                   class="audioPlayer"
-                  src="../chik-3/audio/track-12.mp3"
+                  src="../chik-3/audio/rep-3.mp3"
                 ></audio>
                 <div class="playlist-track-left">
                   <div class="track-cover">
@@ -1020,8 +1019,122 @@
         </div>
       </section>
 
-      <section id="create" class="section_4_2">
+      <section class="section-cover-create">
         <p class="zagolovok">Создайте свою обложку</p>
+
+        <div class="cover-help">
+          <img src="../chik-3/images/question.svg" alt="Подсказка" />
+        </div>
+
+        <div class="cover-create-layout">
+          <!-- Левая часть -->
+          <div class="cover-preview-block">
+            <div class="cover-preview">
+              <!-- сюда потом можно вставить фон, текст, картинку -->
+            </div>
+
+            <button class="cover-save-btn" type="button">Сохранить</button>
+          </div>
+
+          <!-- Правая часть -->
+          <div class="cover-settings">
+            <div class="cover-bg-shape"></div>
+
+            <!-- Цвет обложки -->
+            <div class="cover-option-group">
+              <p class="cover-option-title">Выберите цвет обложки</p>
+
+              <div class="cover-colors">
+                <button
+                  class="color-btn color-white"
+                  type="button"
+                  aria-label="Белый"
+                ></button>
+                <button
+                  class="color-btn color-black active"
+                  type="button"
+                  aria-label="Черный"
+                ></button>
+                <button
+                  class="color-btn color-gradient-mix"
+                  type="button"
+                  aria-label="Градиент 1"
+                ></button>
+                <button
+                  class="color-btn color-gradient-pink"
+                  type="button"
+                  aria-label="Градиент 2"
+                ></button>
+                <button
+                  class="color-btn color-gradient-blue"
+                  type="button"
+                  aria-label="Градиент 3"
+                ></button>
+              </div>
+            </div>
+
+            <!-- Название -->
+            <div class="cover-option-group">
+              <input
+                class="cover-name-input"
+                type="text"
+                placeholder="Введите название обложки"
+              />
+            </div>
+
+            <!-- Шрифт -->
+            <div class="cover-option-group">
+              <p class="cover-option-title">Выберите шрифт текста</p>
+
+              <div class="cover-fonts">
+                <button class="font-btn font-btn-1 active" type="button">
+                  <span>Aa</span>
+                </button>
+
+                <button class="font-btn font-btn-2" type="button">
+                  <span>Aa</span>
+                </button>
+
+                <button class="font-btn font-btn-3" type="button">
+                  <span>Aa</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Цвет текста -->
+            <div class="cover-option-group">
+              <p class="cover-option-title">Выберите цвет текста</p>
+
+              <div class="cover-colors">
+                <button
+                  class="color-btn color-white"
+                  type="button"
+                  aria-label="Белый текст"
+                ></button>
+                <button
+                  class="color-btn color-black"
+                  type="button"
+                  aria-label="Черный текст"
+                ></button>
+                <button
+                  class="color-btn color-gradient-mix"
+                  type="button"
+                  aria-label="Градиентный текст 1"
+                ></button>
+                <button
+                  class="color-btn color-gradient-pink"
+                  type="button"
+                  aria-label="Градиентный текст 2"
+                ></button>
+                <button
+                  class="color-btn color-gradient-blue"
+                  type="button"
+                  aria-label="Градиентный текст 3"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
     <section class="section_5">
