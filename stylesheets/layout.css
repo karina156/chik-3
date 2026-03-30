@@ -622,10 +622,6 @@ a.nav-btn {
   z-index: 2;
 }
 
-.artist-play:hover {
-  transform: translateX(-50%) scale(1.06);
-}
-
 .artist-info {
   position: absolute;
   left: 0.694vw;
@@ -795,7 +791,7 @@ a.nav-btn {
 
 .playlist-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 400;
   color: #d9ee61;
 }
@@ -870,8 +866,8 @@ a.nav-btn {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
   transform: translate(-50%, -50%);
   object-fit: contain;
   z-index: 2;
@@ -1241,10 +1237,28 @@ a.nav-btn {
   transform: translateX(-50%) translateY(0);
 }
 
-@media (max-width: 768px) {
-  .save-popup {
-    font-size: 2.6vw;
-    padding: 2vw 4vw;
-    bottom: 4vw;
-  }
+.section-cover-create {
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-bg {
+  position: absolute;
+  right: -23vw;
+  bottom: 3vw;
+  width: 70vw;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.zagolovok,
+.cover-help,
+.cover-create-layout {
+  position: relative;
+  z-index: 2;
+}
+.cover-help {
+  display: none !important;
 }
