@@ -256,3 +256,40 @@ function searchArtists() {
         })
     })
 }
+
+function playPlaylistMusic() {
+    let tracks = document.querySelectorAll('.playlist-track');
+
+    tracks.forEach((track) => {
+        let playBtn = track.querySelector('.playBtn');
+        let audioPlayer = track.querySelector('.audioPlayer');
+
+        if (!playBtn || !audioPlayer) return;
+
+        playBtn.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                document.querySelectorAll('.audioPlayer').forEach((audio) => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
+
+                document.querySelectorAll('.playBtn').forEach((btn) => {
+                    btn.src = '../chik-3/images/Play.svg';
+                });
+
+                audioPlayer.play();
+                playBtn.src = '../chik-3/images/Pause.svg';
+            } else {
+                audioPlayer.pause();
+                audioPlayer.currentTime = 0;
+                playBtn.src = '../chik-3/images/Play.svg';
+            }
+        });
+
+        audioPlayer.addEventListener('ended', () => {
+            playBtn.src = '../chik-3/images/Play.svg';
+        });
+    });
+}
+
+playPlaylistMusic();
