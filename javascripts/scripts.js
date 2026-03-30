@@ -436,3 +436,49 @@ function setPreviewTextStyles() {
     previewTitle.style.lineHeight = '1'
     previewTitle.style.color = '#ffffff'
 }
+
+saveCover()
+
+function saveCover() {
+    let saveBtn = document.querySelector('.cover-save-btn')
+    let preview = document.querySelector('.cover-preview')
+
+    if (!saveBtn || !preview) return
+
+    saveBtn.addEventListener('click', () => {
+        html2canvas(preview).then((canvas) => {
+            let link = document.createElement('a')
+            link.download = 'cover.png'
+            link.href = canvas.toDataURL('image/png')
+            link.click()
+
+            showSavePopup()
+        })
+    })
+}
+
+function showSavePopup() {
+    let oldPopup = document.querySelector('.save-popup')
+
+    if (oldPopup) {
+        oldPopup.remove()
+    }
+
+    let popup = document.createElement('div')
+    popup.classList.add('save-popup')
+    popup.textContent = 'Ваша обложка сохранена'
+
+    document.body.appendChild(popup)
+
+    setTimeout(() => {
+        popup.classList.add('show')
+    }, 10)
+
+    setTimeout(() => {
+        popup.classList.remove('show')
+
+        setTimeout(() => {
+            popup.remove()
+        }, 300)
+    }, 2000)
+}
